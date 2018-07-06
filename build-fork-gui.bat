@@ -3,11 +3,11 @@ cd "c:\working\fork\conceal-gui"
 del CMakeLists.txt
 copy C:\Working\dev\CMakeLists.txt  /Y
 mkdir cryptonote
-xcopy C:\Working\fork\conceal-cli c:\Working\fork\conceal-gui\cryptonote /E
+xcopy C:\Working\fork\conceal-cli c:\Working\fork\conceal-gui\cryptonote /E /y
 mkdir build
 cd build
-xcopy C:\Working\dev\gui\*.dll c:\Working\fork\conceal-gui\build\Release /E
+xcopy C:\Working\dev\gui\*.dll c:\Working\fork\conceal-gui\build\Release /E /y
 cmake -G "Visual Studio 15 2017 Win64" -DBOOST_LIBRARYDIR:PATH=c:/local/boost_1_67_0 ..
-msbuild CONCEAL-GUI.sln /p:Configuration=Release
+msbuild CONCEAL-GUI.sln /p:Configuration=Release /m
 cd Release
 dir 
