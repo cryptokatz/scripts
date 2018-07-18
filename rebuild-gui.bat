@@ -2,8 +2,6 @@
 cd "c:\working\conceal-gui"
 del CMakeLists.txt
 copy C:\Working\dev\CMakeLists.txt  /Y
-mkdir cryptonote
-xcopy C:\Working\conceal-cli c:\Working\conceal-gui\cryptonote /E /y
 mkdir build
 cd build
 xcopy C:\Working\dev\gui\*.dll c:\Working\conceal-gui\build\Release /E /y
