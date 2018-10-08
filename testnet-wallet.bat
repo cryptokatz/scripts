@@ -4,10 +4,11 @@ del CMakeLists.txt
 copy C:\Working\dev\CMakeLists.txt  /Y
 mkdir cryptonote
 xcopy c:\working\testnet\testnet-core c:\working\testnet\testnet-wallet\cryptonote /E /y
+cd "c:\working\testnet\testnet-wallet"
 mkdir build
 cd build
 xcopy C:\Working\dev\gui\*.dll c:\working\testnet\testnet-wallet\build\Release /E /y
 cmake -G "Visual Studio 15 2017 Win64" -DBOOST_LIBRARYDIR:PATH=c:/local/boost_1_67_0 ..
-msbuild conceal-gui.sln /p:Configuration=Release /m
+msbuild testnet-gui.sln /p:Configuration=Release /m
 cd Release
 dir 
