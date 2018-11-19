@@ -3,7 +3,7 @@ cd "c:\working\conceal-core"
 mkdir build
 cd build
 cmake -G "Visual Studio 15 2017 Win64" -DBOOST_LIBRARYDIR:PATH=c:/local/boost_1_67_0 ..
-msbuild concealX.sln /p:Configuration=Release /m
+msbuild concealX.sln /p:Configuration=Release 
 cd src
 cd Release
 dir *.exe

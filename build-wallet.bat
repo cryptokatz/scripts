@@ -8,7 +8,7 @@ mkdir build
 cd build
 xcopy C:\Working\dev\gui\*.dll c:\Working\conceal-wallet\build\Release /E /y
 cmake -G "Visual Studio 15 2017 Win64" -DBOOST_LIBRARYDIR:PATH=c:/local/boost_1_67_0 ..
-msbuild conceal-gui.sln /p:Configuration=Release /m
+msbuild conceal-gui.sln /p:Configuration=Release 
 cd Release
 copy C:\Working\scripts\build-new-gui.bat  /Y
 dir 
