@@ -1,5 +1,5 @@
 @call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\VsMSBuildCmd.bat"
-cd "c:\working\testnet\testnet-core"
+cd "c:\working\testnet-core"
 mkdir build
 cd build
 cmake -G "Visual Studio 15 2017 Win64" -DBOOST_LIBRARYDIR:PATH=c:/local/boost_1_67_0 ..
